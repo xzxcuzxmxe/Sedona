@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+
+  <nav class="header-nav header-nav--opened header-nav--nojs"><!--Блок навигации он может быть opened и closed-->
+    <div class="header-nav__wrapper"><!--оборачиваем список-->
+
+      <button class="header-nav__toggle--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+
+      <button class="header-nav__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="header-nav__list site-list">
+        <li class="site-list__item">
+          <a class ="site-list__item--active">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML ACADEMY</a>
+        </li>
+        <li class="site-list__item--logo">
+          <a href="#">
+            <img class="icon-logo" src="img/index-photo/icon-logo.svg" alt="" width="102" height="83">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a class="page-header__logo" href="#"><!--Часто может быть так что в мобильной версии лого должно быть выше навигации, в этой версии оно ниже нава, но если нужно будет сделать его выще то можно будет просто поставить логотипу order: 1; (это работает только если элемент флексовый)-->
+    <img class="page-header__logo-image" src="img/index-photo/Sedona-logo-mobile.svg" alt="Добро пожаловать в Седону" width="281" height="214">
+  </a>
+
+</header>
+
+    <main class="page-main">
+
+  <section class="stats">
+    <div class="stats__description">
+      <h2 class="visually-hidden">Что такое седона?</h2>
+      <b class="stats_slogan">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего</b>
+      <p class="stats_intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
+  </section>
+
+ <section class="advantages">
+  <ul class="first-advantages">
+    <h2 class="visually-hidden">Первое преимущество</h2>
+    <li class="first-advantages__list">
+      <b>Настоящий<br> городок</b>
+      <p>— №1 —</p>
+      <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+    </li>
+    <li class="first-advantages__photo"></li>
+  </ul>
+
+  <ul class="other-advantages">
+    <h2 class="visually-hidden">Что тут есть кроме достопримечательностей</h2>
+    <li class="advantages__description house">
+      <div class="icon-house">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.7 72.35"><path d="M29.5,65.34h16V41.41h-16V65.34Zm13.07-2.93H32.44V44.34H42.57Z"/><path d="M72.62,39.44l2.08-2.08-9.91-9.91V.47H51V13.63L37.35,0,0,37.36l2.08,2.08,7.83-7.83v37.8H6v2.94H69.85V69.41H64.79V31.61Zm-18.71-36h7.94v21.1l-7.94-7.94Zm7.94,66h-49V28.67l24.5-24.5,24.5,24.5Z"/><path d="M29.75,27.21a7.75,7.75,0,1,0,7.75-7.75A7.75,7.75,0,0,0,29.75,27.21Zm7.75-5a5,5,0,1,1-5,5A5,5,0,0,1,37.5,22.24Z"/><rect x="16.91" y="41.41" width="3" height="3.94"/><rect x="22.85" y="41.41" width="3" height="3.94"/><rect x="16.91" y="47.41" width="3" height="3.94"/><rect x="22.85" y="47.41" width="3" height="3.94"/><rect x="48.85" y="41.41" width="3" height="3.94"/><rect x="54.78" y="41.41" width="3" height="3.94"/><rect x="48.85" y="47.41" width="3" height="3.94"/><rect x="54.78" y="47.41" width="3" height="3.94"/></svg><!--инклудим так чтобы поменять цвет-->
+      </div>
+      <b>Жилье</b>
+      <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    </li>
+    <li class="advantages__description food">
+      <div class="icon-burgers">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.17 68.96"><path d="M71.91,46H4.25A4.27,4.27,0,0,0,0,50.29v3.46A4.26,4.26,0,0,0,4.25,58h1v1A10,10,0,0,0,15.13,69H61A10,10,0,0,0,71,59V58h1a4.27,4.27,0,0,0,4.26-4.25V50.29A4.27,4.27,0,0,0,71.91,46ZM68,59A6.94,6.94,0,0,1,61,66H15.13A6.93,6.93,0,0,1,8.21,59V58H68Zm5.21-5.29A1.27,1.27,0,0,1,71.91,55H4.25A1.26,1.26,0,0,1,3,53.75V50.29A1.27,1.27,0,0,1,4.25,49H71.91a1.28,1.28,0,0,1,1.26,1.25Z"/><polygon points="16.16 37.86 21.64 41.86 27.11 37.86 32.59 41.86 38.07 37.86 43.55 41.86 49.03 37.86 54.51 41.86 59.98 37.86 65.47 41.86 71.84 37.21 70.07 34.79 65.47 38.14 59.98 34.14 54.51 38.14 49.03 34.14 43.55 38.14 38.07 34.14 32.59 38.14 27.11 34.14 21.64 38.14 16.16 34.14 10.69 38.14 6.09 34.79 4.32 37.21 10.69 41.86 16.16 37.86"/><path d="M70.89,31.09c0-.61,0-2.61,0-3C70.24,12.48,55.8,0,38.08,0S5.92,12.48,5.24,28.09c0,.39,0,2.39,0,3ZM38.08,3c16,0,29.15,11.15,29.84,25.09H8.24C8.93,14.15,22.05,3,38.08,3Z"/><circle cx="38.08" cy="15.04" r="2"/><circle cx="30.08" cy="10.08" r="2"/><circle cx="46.08" cy="10.08" r="2"/></svg><!--инклудим так чтобы поменять цвет-->
+      </div>
+      <b>Еда</b>
+      <p>Всегда заказывайте фирменный бургер, <br> Вы не разочаруетесь!</p>
+    </li>
+    <li class="advantages__description souvenirs">
+      <div class="icon-gift">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 75.08"><path d="M60.17,22.23H35.76C49.36,15.41,50.45,11.12,50,8.71,48.8,4.79,44.34,1.77,40.1,3.37c-5.49,2.06-7,10.26-8.52,16.19-1.89-6-3.72-13.65-8-17.53A7.21,7.21,0,0,0,17.9,0c-4,.35-9.65,5.32-7.35,10.85,2.22,5.31,9.54,8.67,14.36,11.35H2.83A2.84,2.84,0,0,0,0,25.06V36.25a2.84,2.84,0,0,0,2.84,2.83H3.1v36h57v-36h.11A2.83,2.83,0,0,0,63,36.25V25.06A2.85,2.85,0,0,0,60.17,22.23ZM41.77,5.87c2.07-.3,4.9,1.29,5.17,3.17.39,2.73-3.35,5.2-5,6.35-2.48,1.72-4.85,2.61-7.17,4C35.63,15.75,37.27,6.54,41.77,5.87ZM19.23,15.72C17,14.25,12.79,11.34,12.89,8,13,4.49,18.54,1.55,21.57,4.2c3.8,3.34,5.62,11,7,16.36A68.14,68.14,0,0,1,19.23,15.72Zm5.88,56.43H6V39.08H25.11Zm0-36.07H3V25.23H25.11Zm10,36.07H28.05V25.23h7.07Zm22,0H38.05V39.08H57.13ZM60,36.08h-22V25.23H60Z" transform="translate(0 0)"/></svg><!--инклудим так чтобы поменять цвет-->
+      </div>
+      <b>Сувениры</b>
+      <p>Не только китайского, но и местного производства!</p>
+    </li>
+  </ul>
+
+  <ul class="second-advantages">
+    <h2 class="visually-hidden">Второе преимущество</h2>
+    <li class="second-advantages__list">
+      <b>Там есть<br> мост дьявола</b>
+      <p>— №2 —</p>
+      <p>Да, по нему можно пройти! Если вы осмелитесь конечно</p>
+    </li>
+    <li class="second-advantages__photo"></li>
+  </ul>
+
+
+  <ul class="grey-other-advantages">
+    <li class="third-advantage">
+      <b>Небольшая <br>площадь</b>
+      <p>— №3 —</p>
+      <p>Все интересные места находятся очень близко</p>
+    </li>
+    <div class="line"></div>
+    <li class="fourth-advantage">
+      <b>Красивая <br>дорога</b>
+      <p>— №4 —</p>
+      <p>Ехать из Седону из Лас-Вегаса совсем не скучно!</p>
+    </li>
+    <div class="line"></div>
+    <li class="fifth-advantage">
+      <b>Мало <br>туристов</b>
+      <p>— №5 —</p>
+      <p>Большинство едет в Гранд каньон и толпится там</p>
+    </li>
+  </ul>
+ </section>
+
+ <section class="interest">
+  <div class="interest__description">
+    <b>Заинтересовались?</b>
+    <p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <button class="interest__button">
+      <b>Найти гостиницу</b> 
+    </button>
+  </div>
+ </section>
+
+ <section class="map">
+   <picture>
+    <source type="image/webp" srcset="img/index-photo/map-desktop.webp 1x, img/index-photo/map-desktop.@2x.webp 2x">
+    <img class="arizona-map" width="1200" height="350" src="img/index-photo/map-desktop.jpg" srcset="img/index-photo/map-desktop.@2x.jpg 2x">
+  </picture>
+  <img class="map-marker" width="27" height="27" src="img/index-photo/map-marker.svg">
+ </section>
+
+
+</main>
+
+
+    <footer class="page-footer">
+  <div class="footer-wrapper">
+      <p class="footer-teg">
+        #VISITSEDONA
+      </p>
+    <div class="footer-social">
+      <ul class="footer-social__list">
+        <li class="social__item twitter">
+          <a href="https://twitter.com/sedonaaz" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="18" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 14.66"><g id="W6EeEF"><path d="M11.28.15A3.31,3.31,0,0,1,15,1.3c.69-.22,1.37-.47,2.07-.69a2.27,2.27,0,0,1-.88,1.73,1.62,1.62,0,0,0,1.34-.48,2.89,2.89,0,0,1-1.61,2c-.24,6.59-3.27,11-10.38,10.82H5.05c-.42,0-4.29-.45-5-1.84a6.64,6.64,0,0,0,4.84-1.15c-1-.3-2.77-.47-3.07-2.88A2.13,2.13,0,0,0,3,8.9C1.76,8.07.38,7.37.46,5.22a2,2,0,0,0,1.38.46C1.12,5.44-.19,2.4.92.84,2.79,2.65,4.77,4.36,8.29,4.53,8.51,2.29,9.46.79,11.28.15Z" transform="translate(0 0)"/></g></svg></a><!--инклудим так чтобы поменять цвет--> 
+        </li>
+        <li class="social__item facebook">
+          <a href="https://www.facebook.com/VisitSedona/" target="s_blank"><svg id="Layer_1" width="9" height="18" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 18.94"><path d="M6.28,3.36H8.67V0H5.79C2.66.18,1.54,2.39,2,6.11H0V9.63H2v9.31H5.8V9.63H8.65V6.11H5.79C5.77,5.07,5.75,3.71,6.28,3.36Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+        </li>
+        <li class="social__item youtube">
+          <a href="https://www.youtube.com/watch?v=_qHjLngt7OI&ab_channel=ThroughMyLens" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="20" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.98 14.02"><path d="M17.14,0H2.83A2.84,2.84,0,0,0,0,2.83v8.35A2.84,2.84,0,0,0,2.83,14H17.14A2.84,2.84,0,0,0,20,11.18V2.83A2.85,2.85,0,0,0,17.14,0ZM7,10.39V3.62L13.8,7Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      Разработанно <a href="https://vk.com/rare_chert" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.95 34.09"><path d="M13.62,0l-.15,0L0,1.41V26.07l13.47,8,13.43-8,.05,0V1.41ZM25,12.13,13.5,5.33v-.1l-.08,0-.09-.06v.11L1.92,12.12v-9L13.47,1.93,25,3.15v9ZM13.41,6.79,24.92,13.5l-4.48,2.64-7.09-4.22v1.41l5.9,3.52-.86.5-5-3v1.42l3.82,2.27-.78.53-3-1.79V18.2l1.85,1.09-1.8,1.08L2,13.62ZM1.92,15.13l11.42,6.79v1L5.41,18.23v1.42l8,4.8,0,1.07-8-4.74V22.2l8,4.82,0,0,8.15-4.87V17L25,15V25L13.47,31.85,1.92,25Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+    </p>
+  </div>
+
+</footer>
+
+<script src="/js/script.min.js"></script>
+ 
+  <!--js подключил в footer`e внизу -->
+</body>
+</html>

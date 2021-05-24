@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+
+  <nav class="header-nav header-nav--opened header-nav--nojs"><!--Блок навигации он может быть opened и closed-->
+    <div class="header-nav__wrapper"><!--оборачиваем список-->
+
+      <button class="header-nav__toggle--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+
+      <button class="header-nav__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="header-nav__list site-list">
+        <li class="site-list__item">
+          <a href ="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item--active">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML ACADEMY</a>
+        </li>
+        <li class="site-list__item--logo">
+          <a href="#">
+            <img class="icon-logo" src="img/index-photo/icon-logo.svg" alt="" width="102" height="83">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a class="page-header__logo" href="#"><!--Часто может быть так что в мобильной версии лого должно быть выше навигации, в этой версии оно ниже нава, но если нужно будет сделать его выще то можно будет просто поставить логотипу order: 1; (это работает только если элемент флексовый)-->
+    <img class="page-header__logo-image" src="img/index-photo/Sedona-logo-mobile.svg" alt="Добро пожаловать в Седону" width="281" height="214">
+  </a>
+
+</header>
+    
+    <main class="photo-main">
+  <section class="photo-stats">
+    <div class="photo-stats__description">
+      <h2 class="visually-hidden">Фото и видео</h2>
+      <b>Фото и видео</b>
+      <p>Не можете решиться на путешествие из-за курса?<br> фотографии помогут вам забыть о политике и экономике</p>
+    </div>
+  </section>
+
+  <section class="main-photos">
+    <div class="photos-line"></div>
+    
+    <p class="photo-wrapper">
+      <picture>
+        <source type="image/webp" srcset="img/photo-images/photo-1-desktop.webp 1x, img/photo-images/photo-1-desktop@2x.webp 2x">
+        <img class="first_photo photo_itself" width="1200" height="400" src="img/photo-images/photo-1-desktop.jpg" srcset="img/photo-images/photo-1-desktop@2x.jpg 2x">
+      </picture>
+    </p>
+
+    <div class="photos-authors">
+      <div class="photos-description">
+        <b class="photo-title">Неродные просторы</b>
+        <p class="photo-author">Автор фото: Борис</p>
+      </div>
+
+      <div class="photo-likes">
+        <button class="like"><sub><svg id="Layer_1" width="23px" height="21px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20"><defs></defs><g id="Page-1"><g id="Core"><g id="thumb-up"><g id="Shape"><path class="cls-1" d="M12.38,3.65l-.63,2.93L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z"/></g></g></g></g></svg></sub></button>
+        1350
+      </div>
+    </div>
+  </section>
+
+  <div class="photos"><!--*этот блок будет флексовым и в нем будет 3 фото-->
+    <div class="photos-line"></div>
+
+    <div class="additional">
+      <p class="additional_photo-wrapper">
+        <img class="additional_photo photo_itself" width="400" height="267" src="img/photo-images/photo-2-desktop.jpg" srcset="img/photo-images/photo-2-desktop@2x.jpg 2x">
+      </p>
+
+      <div class="additional_photos-authors">
+        <div class="photos-description">
+          <b class="photo-title">Местная растительность</b>
+          <p class="photo-author">Автор фото: Сергей</p>
+        </div>
+
+        <div class="photo-likes">
+          <button class="like"><sub><svg id="Layer_1" width="23px" height="21px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20"><defs></defs><g id="Page-1"><g id="Core"><g id="thumb-up"><g id="Shape"><path class="cls-1" d="M12.38,3.65l-.63,2.93L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z"/></g></g></g></g></svg></sub></button>
+          143
+        </div>
+      </div>
+    </div>
+    
+    <!--*3фото-->
+    <div class="additional">
+      <div class="photos-line"></div>
+      <p class="additional_photo-wrapper">
+        <img class="additional_photo photo_itself" width="400" height="267" src="img/photo-images/photo-3-desktop.jpg" srcset="img/photo-images/photo-3-desktop@2x.jpg 2x">
+      </p>
+
+      <div class="additional_photos-authors grey">
+        <div class="photos-description">
+          <b class="photo-title">Дорога на север</b>
+          <p class="photo-author">Автор фото: Петр</p>
+        </div>
+
+        <div class="photo-likes">
+          <button class="like"><sub><svg id="Layer_1" width="23px" height="21px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20"><defs></defs><g id="Page-1"><g id="Core"><g id="thumb-up"><g id="Shape"><path class="cls-1" d="M12.38,3.65l-.63,2.93L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z"/></g></g></g></g></svg></sub></button>
+          96
+        </div>
+      </div>
+    </div>
+
+    <!--*4фото-->
+    <div class="additional">
+      <div class="photos-line"></div>
+      <p class="additional_photo-wrapper">
+        <img class="additional_photo photo_itself" width="400" height="267" src="img/photo-images/photo-4-desktop.jpg" srcset="img/photo-images/photo-4-desktop@2x.jpg 2x">
+      </p>
+
+      <div class="additional_photos-authors">
+        <div class="photos-description">
+          <b class="photo-title">Мост дьявола</b>
+          <p class="photo-author">Автор фото: Антон</p>
+        </div>
+
+        <div class="photo-likes">
+          <button class="like"><sub><svg id="Layer_1" width="23px" height="21px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20"><defs></defs><g id="Page-1"><g id="Core"><g id="thumb-up"><g id="Shape"><path class="cls-1" d="M12.38,3.65l-.63,2.93L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z"/></g></g></g></g></svg></sub></button>
+          254
+        </div>
+      </div>
+    
+      </div>
+
+  </div>
+
+</main>
+
+
+    <footer class="page-footer">
+  <div class="footer-wrapper">
+      <p class="footer-teg">
+        #VISITSEDONA
+      </p>
+    <div class="footer-social">
+      <ul class="footer-social__list">
+        <li class="social__item twitter">
+          <a href="https://twitter.com/sedonaaz" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="18" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 14.66"><g id="W6EeEF"><path d="M11.28.15A3.31,3.31,0,0,1,15,1.3c.69-.22,1.37-.47,2.07-.69a2.27,2.27,0,0,1-.88,1.73,1.62,1.62,0,0,0,1.34-.48,2.89,2.89,0,0,1-1.61,2c-.24,6.59-3.27,11-10.38,10.82H5.05c-.42,0-4.29-.45-5-1.84a6.64,6.64,0,0,0,4.84-1.15c-1-.3-2.77-.47-3.07-2.88A2.13,2.13,0,0,0,3,8.9C1.76,8.07.38,7.37.46,5.22a2,2,0,0,0,1.38.46C1.12,5.44-.19,2.4.92.84,2.79,2.65,4.77,4.36,8.29,4.53,8.51,2.29,9.46.79,11.28.15Z" transform="translate(0 0)"/></g></svg></a><!--инклудим так чтобы поменять цвет--> 
+        </li>
+        <li class="social__item facebook">
+          <a href="https://www.facebook.com/VisitSedona/" target="s_blank"><svg id="Layer_1" width="9" height="18" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 18.94"><path d="M6.28,3.36H8.67V0H5.79C2.66.18,1.54,2.39,2,6.11H0V9.63H2v9.31H5.8V9.63H8.65V6.11H5.79C5.77,5.07,5.75,3.71,6.28,3.36Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+        </li>
+        <li class="social__item youtube">
+          <a href="https://www.youtube.com/watch?v=_qHjLngt7OI&ab_channel=ThroughMyLens" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="20" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.98 14.02"><path d="M17.14,0H2.83A2.84,2.84,0,0,0,0,2.83v8.35A2.84,2.84,0,0,0,2.83,14H17.14A2.84,2.84,0,0,0,20,11.18V2.83A2.85,2.85,0,0,0,17.14,0ZM7,10.39V3.62L13.8,7Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      Разработанно <a href="https://vk.com/rare_chert" target="s_blank"><svg id="Layer_1" data-name="Layer 1" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.95 34.09"><path d="M13.62,0l-.15,0L0,1.41V26.07l13.47,8,13.43-8,.05,0V1.41ZM25,12.13,13.5,5.33v-.1l-.08,0-.09-.06v.11L1.92,12.12v-9L13.47,1.93,25,3.15v9ZM13.41,6.79,24.92,13.5l-4.48,2.64-7.09-4.22v1.41l5.9,3.52-.86.5-5-3v1.42l3.82,2.27-.78.53-3-1.79V18.2l1.85,1.09-1.8,1.08L2,13.62ZM1.92,15.13l11.42,6.79v1L5.41,18.23v1.42l8,4.8,0,1.07-8-4.74V22.2l8,4.82,0,0,8.15-4.87V17L25,15V25L13.47,31.85,1.92,25Z"/></svg></a><!--инклудим так чтобы поменять цвет-->
+    </p>
+  </div>
+
+</footer>
+
+<script src="/js/script.min.js"></script>
+ 
+  <!--js подключил в footer`e внизу -->
+</body>
+</html>
